@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API = "http://127.0.0.1:8000"
+API = "https://student-tracker-api-ql07.onrender.com"
 
 st.title("Student Project Tracker")
 st.caption("Submit projects, view them, and predict their category using AI")
@@ -102,4 +102,3 @@ if st.button("Predict Category"):
             st.caption(f"Description: {data['description']}")
         else:
             st.error("Prediction failed.")
-            
