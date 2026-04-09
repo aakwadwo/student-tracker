@@ -207,4 +207,4 @@ Environment variable `DATABASE_URL` is set on Render to connect to the PostgreSQ
 
 ## Author
 
-Kwadwo — built as part of a FastAPI to AI Deployment learning project.
+Kwadwo Amoah Asumadu — built as part of a FastAPI to AI Deployment learning project.
