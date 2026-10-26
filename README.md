@@ -1,6 +1,6 @@
 # Student Project Tracker
 
-A full-stack AI-powered API system built with FastAPI, MySQL, JWT authentication, a machine learning model, Docker, and a Streamlit frontend. Deployed live on Render.
+A full-stack AI-powered API system built with FastAPI, MySQL, JWT authentication, a machine learning model, Docker, and a Streamlit frontend.
 
 ---
 
@@ -10,15 +10,6 @@ This system allows users to:
 - Register and log in securely
 - Create, view, update, and delete student projects
 - Use an AI model to automatically classify a project description into a category (AI, Web, Data Science, or Mobile)
-
----
-
-## Live Links
-
-| Service | URL |
-|--------|-----|
-| Frontend | https://student-tracker-frontend-34zp.onrender.com |
-| API Docs | https://student-tracker-api-ql07.onrender.com/docs |
 
 ---
 
@@ -181,7 +172,7 @@ Output: { "description": "AI system for healthcare", "category": "AI" }
 
 ## Deployment (Render)
 
-The app is deployed on [Render](https://render.com) using two services:
+The app was deployed on [Render](https://render.com) using these services:
 
 - **Web Service** — runs the FastAPI backend
 - **Web Service** — runs the Streamlit frontend
