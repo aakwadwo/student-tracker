@@ -78,15 +78,19 @@ CREATE DATABASE student_tracker;
 exit
 ```
 
-### 5. Create a `.env` file
-Create a file called `.env` in the project folder:
+### 5. Configure environment variables
+Copy the template and fill in your values:
+```bash
+cp .env.example .env
 ```
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=student_tracker
-SECRET_KEY=your-secret-key
+`SECRET_KEY` signs and verifies JWT access tokens. The API refuses to start
+without it. `DATABASE_URL` points to your MySQL database. For a local MySQL
+connection, also install the driver with `pip install pymysql`.
+
+The app does not load `.env` by itself, so export the variables before
+starting it locally:
+```bash
+set -a; source .env; set +a
 ```
 
 ### 6. Train the ML model
